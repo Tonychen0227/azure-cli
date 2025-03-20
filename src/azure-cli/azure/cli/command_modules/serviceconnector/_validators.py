@@ -115,7 +115,7 @@ def check_required_args(resource, cmd_arg_values):
 
 
 def get_fabric_access_token():
-    get_fabric_token_cmd = 'az account get-access-token --output json --resource https://api.fabric.microsoft.com/'
+    get_fabric_token_cmd = 'az account get-access-token --output json --resource https://analysis.windows.net/powerbi/api'
     return run_cli_cmd(get_fabric_token_cmd).get('accessToken')
 
 
